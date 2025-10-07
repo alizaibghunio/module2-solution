@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page heading */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 30px 0;
+}
+
+/* Layout container */
+.row {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Each section box */
+.section {
+  position: relative;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  padding: 40px 15px 15px 15px;
+  margin: 15px;
+  float: left;
+}
+
+/* Section title box (top right corner) */
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Unique title background colors */
+#chicken-title {
+  background-color: #e67e22; /* orange */
+}
+#beef-title {
+  background-color: #c0392b; /* red */
+}
+#sushi-title {
+  background-color: #2980b9; /* blue */
+}
+
+/* Section text */
+.section p {
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* ===== DESKTOP VIEW (992px and above) ===== */
+@media (min-width: 992px) {
+  .section {
+    width: 30%;
+  }
+}
+
+/* ===== TABLET VIEW (768px to 991px) ===== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 45%;
+  }
+
+  /* 3rd section full width on tablet */
+  #sushi {
+    width: 93%;
+  }
+}
+
+/* ===== MOBILE VIEW (767px and below) ===== */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+  }
+}
